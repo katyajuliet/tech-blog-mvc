@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "",
   "dependencies": {
     "bcrypt": "^5.0.1",

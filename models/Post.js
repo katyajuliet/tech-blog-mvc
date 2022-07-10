@@ -14,6 +14,7 @@ class post extends Model {
         attributes: [
           "id",
           "post_text",
+          "post_img",
           "title",
           "created_at",
           [
@@ -65,7 +66,7 @@ post.init(
 
     post_img: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
 
     user_id: {

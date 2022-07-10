@@ -1,0 +1,31 @@
+<article class="post article_style">
+  <a href="/post/{{id}}">
+  
+    <div class="title">
+      <h1>{{title}}</h1>
+      {{#if edit}}
+        <a href="/dashboard/edit/{{id}}" class="edit-link">Edit Post</a>
+      {{/if}}
+      <h5>{{user.username}}</h5>
+
+      {{#if loggedIn}}
+        <p>{{post_text}}</p>
+      {{/if}}
+
+    
+    </div>
+  </a>
+  <div class="meta">
+    {{#if loggedIn}}
+      {{vote_count}}
+      {{format_plural "point" vote_count}}
+      by
+      {{user.username}}
+      on
+      {{format_date created_at}}
+      |
+      <a href="/post/{{id}}">{{comment.length}}
+        {{format_plural "comment" comment.length}}</a>
+    {{/if}}
+  </div>
+</article>

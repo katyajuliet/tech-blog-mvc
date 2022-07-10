@@ -1,0 +1,25 @@
+{{> post-info post loggedIn = loggedIn}}
+<style>
+.article_style{
+  width: 100%;
+}
+    </style>
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Leave a comment</button>
+    {{!-- <button type="button" class="upvote-btn">Like</button> --}}
+  </div>
+</form>
+{{/if}}
+
+{{> comment post.comment}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
+{{/if}}

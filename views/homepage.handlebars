@@ -1,0 +1,12 @@
+<h2>Small But Mighty Tech Posts</h2>
+<ol class="post-list">
+
+    {{#each posts as |post|}}
+
+        <li>
+
+            {{> slice post loggedIn = ../loggedIn }}
+
+        </li>
+    {{/each}}
+</ol>

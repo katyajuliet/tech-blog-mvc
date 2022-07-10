@@ -22,8 +22,7 @@ module.exports = {
   
      slice: (str) => {
       return str.slice (0,110)
-     }
-  
+     },
   
   };
   

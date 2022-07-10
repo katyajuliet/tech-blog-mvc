@@ -1,4 +1,9 @@
-<h2>Sign up! Post, Comment...Be Mighty! </h2>
+  {{#if loggedIn}}
+<h2>Hello Mighty, Tech Pup! </h2>
+  {{else}}
+  <h2>Sign up! Post, Comment...Be Mighty! </h2>
+  {{/if}}
+  
 <ol class="post-list">
 
     {{#each posts as |post|}}

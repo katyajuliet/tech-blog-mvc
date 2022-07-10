@@ -1,6 +1,6 @@
 <article class="post article_style">
   <a href="/post/{{id}}">
-  
+    <img class="article_img" src="/image/post1.png" />
     <div class="title">
       <h1>{{title}}</h1>
       {{#if edit}}
@@ -12,7 +12,7 @@
         <p>{{post_text}}</p>
       {{/if}}
 
-    
+
     </div>
   </a>
   <div class="meta">
@@ -24,8 +24,8 @@
       on
       {{format_date created_at}}
       |
-      <a href="/post/{{id}}">{{comment.length}}
-        {{format_plural "comment" comment.length}}</a>
+      <a href="/post/{{id}}">{{comments.length}}
+        {{format_plural "comment" comments.length}}</a>
     {{/if}}
   </div>
 </article>

@@ -14,7 +14,7 @@
             <a href="/">
             <img src="/image/pug.png" class="size_image" />
             </a>
-            <h2>Your Mighty Tech Blog! </h2>
+            <h2>Your Mighty Tech Blog!</h2>
         </div>
         <nav>
             <a href="/" class="btn-no-style">Home</a>
@@ -26,6 +26,37 @@
                 <a class="btn-no-style" href="/login">Login</a>
             {{/if}}
         </nav>
+{{!-- 
+<input type="checkbox" id="hamburger-input" class="burger-shower" />
+<label id="hamburger-menu" for="hamburger-input">
+  <nav id="sidebar-menu">
+    <h3>Menu</h3>
+     <a href="/" class="btn-no-style">Home</a>
+            {{#if loggedIn}}
+                <a href="/dashboard" class="btn-no-style">New Post / Edit Post</a>
+                <button id="logout" class="btn-no-style">Logout</button>
+            {{else}}
+                <a class="btn-no-style" href="/login">Login</a>
+            {{/if}}
+  </nav>
+</label> --}}
+
+{{!-- <div class="overlay"></div> --}}
+<label>
+<input type="checkbox">
+<span class="menu"> <span class="hamburger"></span> </span>
+<ul>
+ <a href="/" class="btn-no-style">Home</a>
+
+            {{#if loggedIn}}
+                <a href="/dashboard" class="btn-no-style">New Post / Edit Post</a>
+                <button id="logout" class="btn-no-style">Logout</button>
+            {{else}}
+                <a class="btn-no-style" href="/login">Login</a>
+            {{/if}}
+</ul>
+</label>
+
     </header>
     <main>
         {{{ body }}}

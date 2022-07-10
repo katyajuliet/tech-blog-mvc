@@ -10,7 +10,7 @@ Challenge 14 - Mighty Tech Blog by Katya Juliet
 * [License](#license)
 
 ## Description
-Project 2: Scott, Katya, Michael and Farah - Travel Review Site with login / logout dashboard, ability to post reviews with photo, title, location, review text with travel categories. After sign up or registration, users can post, edit, delete and / or comment on other posts.
+Challenge 14 - to build a tech blog with CRUD routes working. Includes sign in / sign out with hidden text, comment model and slice helper file for shortened text on homepage. 
 
 ## Live
 [Heroku Link](https://mighty-tech.herokuapp.com/)

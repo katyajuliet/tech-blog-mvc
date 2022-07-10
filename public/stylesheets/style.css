@@ -1,6 +1,9 @@
-* {
+
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 body html {
@@ -8,9 +11,9 @@ body html {
   padding: 0;
   margin: 0;
   height: 100%;
-  background: white;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
+
 
 a {
   text-decoration: none;
@@ -104,13 +107,14 @@ form label {
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content:space-between;
   align-items: center;
   padding: 0 1%;
 }
 
-header nav {
-justify-content: flex-end;
+nav {
+font-size: 16px;
 }
 
 header h1 {
@@ -131,7 +135,7 @@ main h2 {
   color: black;
   font-family: fantasy;
   font-weight: bolder;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 main a,
@@ -681,8 +685,21 @@ label a {
     display: inline;
   }
 
+
+  header {
+    background: #fa6900;
+  }
+
   nav {
     display: none;
+  }
+
+  main h2 {
+    text-align: center;
+    color: black;
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 16px;
   }
 
   footer h3 {
@@ -701,6 +718,8 @@ label a {
   label .menu {
     display: none;
   }
+
+
 
   /* nav {
     display: none;

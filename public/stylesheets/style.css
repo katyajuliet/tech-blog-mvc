@@ -681,6 +681,10 @@ label a {
   /* #main-menu {
     display: none;
   } */
+
+  * {
+    font-family: sans-serif;
+  }
   #hamburger-menu {
     display: inline;
   }
@@ -695,6 +699,7 @@ ol,
 li {
   color: black;
   font-family: sans-serif;
+  font-size: 14px;
 }
 
   nav {
@@ -704,7 +709,7 @@ li {
   main h2 {
     text-align: center;
     color: black;
-    font-family: fantasy;
+    font-family: sans-serif;
     font-weight: bolder;
     font-size: 16px;
   }

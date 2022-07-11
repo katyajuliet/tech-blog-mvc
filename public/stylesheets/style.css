@@ -582,6 +582,7 @@ label .menu {
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
   cursor: pointer;
+  font-family: sans-serif;
 }
 
 label .hamburger {
@@ -596,6 +597,7 @@ label .hamburger {
   transform-origin: center;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  font-family: sans-serif;
 }
 
 label .hamburger:after,
@@ -608,6 +610,7 @@ label .hamburger:before {
   width: 100%;
   height: 100%;
   background: #69d2e7;
+  font-family: sans-serif;
 }
 
 label .hamburger:before {
@@ -620,6 +623,7 @@ label .hamburger:after {
 
 label input {
   display: none;
+  font-family: sans-serif;
 }
 
 label input:checked + .menu {
@@ -658,6 +662,7 @@ label ul {
   opacity: 0;
   -webkit-transition: 0.25s 0s ease-in-out;
   transition: 0.25s 0s ease-in-out;
+  font-family: sans-serif;
 }
 
 label a {
@@ -665,6 +670,7 @@ label a {
   display: block;
   color: #f38630;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 /* h1 {
@@ -681,10 +687,6 @@ label a {
   /* #main-menu {
     display: none;
   } */
-
-  * {
-    font-family: sans-serif;
-  }
   #hamburger-menu {
     display: inline;
   }
@@ -693,6 +695,10 @@ label a {
     font-size: 14px;
     font-family: sans-serif;
     color: black;
+  }
+
+  .btn-no-style {
+    font-family: sans-serif;
   }
 
   .form-entry h3 {

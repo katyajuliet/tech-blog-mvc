@@ -690,6 +690,13 @@ label a {
     background: #fa6900;
   }
 
+  main a,
+ol,
+li {
+  color: black;
+  font-family: sans-serif;
+}
+
   nav {
     display: none;
   }

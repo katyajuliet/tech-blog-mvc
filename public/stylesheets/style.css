@@ -689,6 +689,16 @@ label a {
     display: inline;
   }
 
+  .posts-title h2 {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+  }
+
+  .form-entry h3 {
+    font-size: 14pxpx;
+    font-family: sans-serif;
+  }
 
   header {
     background: #fa6900;
@@ -716,6 +726,7 @@ li {
 
   footer h3 {
     text-align: center;
+    font-family: sans-serif;
   }
 }
 
